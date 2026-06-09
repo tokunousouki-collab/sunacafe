@@ -1,0 +1,307 @@
+body{
+    margin:0;
+    height:100vh;
+
+background:
+linear-gradient(
+rgba(0,0,0,0.5),
+rgba(0,0,0,0.5)
+),
+url("images/coffee.jpg");
+
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+
+    color:white;
+    text-align:center;
+
+    font-family:"Yu Mincho",serif;
+
+}
+
+
+.hero{
+    width:100%;
+}
+
+h1{
+    font-size:80px;
+    margin-bottom:20px;
+    letter-spacing:5px;
+}
+
+.catchcopy{
+    font-size:28px;
+    margin-bottom:30px;
+}
+
+.info{
+    font-size:20px;
+    line-height:2;
+    margin-bottom:40px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 40px;
+
+   background:#8b5a2b;
+color:white;
+
+    text-decoration:none;
+    border-radius:50px;
+
+    font-size:18px;
+}
+
+.btn:hover{
+    opacity:0.8;
+}
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 60px;
+
+    background:rgba(255,255,255,0.9);
+
+    box-sizing:border-box;
+}
+
+.logo{
+    font-size:32px;
+    color:#4a2f1d;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+nav a{
+    text-decoration:none;
+    color:#4a2f1d;
+    font-size:14px;
+}
+
+.hero{
+    margin-top:80px;
+}
+
+.about{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:60px;
+
+    padding:100px 80px;
+
+    background:#f8f5f0;
+
+    color:#4a2f1d;
+}
+
+.about-image img{
+    width:500px;
+
+    border-radius:10px;
+}
+
+.about-text{
+    max-width:500px;
+}
+
+.about-text h2{
+    font-size:42px;
+
+    margin-bottom:20px;
+}
+
+.about-text p{
+    line-height:2;
+
+    font-size:18px;
+}
+.menu{
+    padding:100px 10%;
+    text-align:center;
+}
+
+.menu h2{
+    font-size:48px;
+    margin-bottom:60px;
+    color:#4b2e1f;
+}
+
+.menu-grid{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.menu-item{
+    width:300px;
+}
+
+.menu-item img{
+    width:100%;
+    border-radius:10px;
+}
+
+.menu-item h3{
+    margin-top:20px;
+    font-size:24px;
+    color:#4b2e1f;
+    display:block;
+}
+
+.menu-item p{
+    font-size:20px;
+    color:#8b5a2b;
+}
+.news{
+    padding:120px 10%;
+    background:#f8f5f1;
+}
+
+.news h2{
+    text-align:center;
+    font-size:48px;
+    margin-bottom:60px;
+    color:#4b2e1f;
+}
+
+.news-list{
+    max-width:800px;
+    margin:0 auto;
+}
+
+.news-item{
+    display:flex;
+    gap:30px;
+    padding:20px 0;
+    border-bottom:1px solid #ddd;
+}
+
+.news-item span{
+    font-weight:bold;
+    color:#4b2e1f;
+}
+section{
+    padding:100px 0;
+}
+
+.about,
+.menu,
+.news{
+    min-height:auto;
+}
+
+.menu{
+    background:#ffffff;
+}
+
+.menu-grid{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:40px;
+    flex-wrap:wrap;
+}
+.menu-item img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.menu-item{
+    text-align: center;
+}
+
+.menu-item h3{
+    margin-top: 15px;
+    font-size: 28px;
+}
+
+.menu-item p{
+    font-size: 24px;
+    color: #a66a3f;
+}
+.hero{
+    height: 100vh;
+    background-image: url("images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay{
+    background: rgba(0,0,0,0.4);
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+}
+
+.hero-overlay h1{
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.hero-overlay .catchcopy{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 40px;
+    }
+
+    .hero-overlay .catchcopy {
+        font-size: 18px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about-image img {
+        width: 100%;
+    }
+
+}
